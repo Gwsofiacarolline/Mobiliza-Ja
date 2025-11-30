@@ -22,7 +22,8 @@
 
                         <h5 class="fw-semibold mb-3">Dados do Cliente</h5>
 
-                        <form>
+                        <!-- FORMULÁRIO CORRIGIDO COM VALIDAÇÃO -->
+                        <form action="obrigadaAluguel.html">
 
                             <div class="mb-3">
                                 <label class="form-label">Nome Completo</label>
@@ -71,18 +72,18 @@
                                 <input type="text" id="cidade" class="form-control" placeholder="Cidade" list="listaCidades" required> 
                                 
                                 <datalist id="listaCidades">
-                                <option value="São Paulo, SP"></option>
-                                <option value="Rio de Janeiro, RJ"></option>
-                                <option value="Belo Horizonte, MG"></option>
-                                <option value="Porto Alegre, RS"></option>
-                                <option value="Curitiba, PR"></option>
-                                <option value="Salvador, BA"></option>
-                                <option value="Recife, PE"></option>
-                                <option value="Brasília, DF"></option>
-                                <option value="Fortaleza, CE"></option>
-                                <option value="Campinas, SP"></option>
-                                <option value="Outra Cidade..."></option>
-                            </datalist>
+                                    <option value="São Paulo, SP"></option>
+                                    <option value="Rio de Janeiro, RJ"></option>
+                                    <option value="Belo Horizonte, MG"></option>
+                                    <option value="Porto Alegre, RS"></option>
+                                    <option value="Curitiba, PR"></option>
+                                    <option value="Salvador, BA"></option>
+                                    <option value="Recife, PE"></option>
+                                    <option value="Brasília, DF"></option>
+                                    <option value="Fortaleza, CE"></option>
+                                    <option value="Campinas, SP"></option>
+                                    <option value="Outra Cidade..."></option>
+                                </datalist>
                             </div>
 
                             <hr class="my-4">
@@ -127,11 +128,12 @@
                                 </select>
                             </div>
 
+                            <!-- BOTÃO CORRIGIDO -->
                             <div class="text-center mt-4">
-                                <a href="obrigadaAluguel.html"
-                                   class="btn btn-success btn-lg rounded-pill px-5 shadow-sm">
+                                <button type="submit"
+                                        class="btn btn-success btn-lg rounded-pill px-5 shadow-sm">
                                     Finalizar Aluguel
-                                </a>
+                                </button>
                             </div>
 
                         </form>
@@ -142,27 +144,13 @@
             </div>
         </div>
     </div>
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
-    </div>
+
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
       new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
-    
+
     <script src="../js/formAluguel.js"></script> 
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
-  </div>
-</div>
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
 
 </body>
 
