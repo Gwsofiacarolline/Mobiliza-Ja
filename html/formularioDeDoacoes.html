@@ -106,7 +106,7 @@
                             </div>
 
                             <!-- BOTÃO SUBMIT CORRIGIDO -->
-                            <form action="obrigadaPorDoar.html" method="GET">
+                            <form id="formDoacao" method="GET">
 
                                 <div class="text-center mt-4">
                                     <button type="submit" class="btn btn-primary btn-lg rounded-pill shadow-sm">
@@ -139,6 +139,18 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('formDoacao').addEventListener('submit', function (event) {
+            // Impede o envio padrão do formulário para podermos mostrar o alerta primeiro
+            event.preventDefault();
+
+            // Mostra o alerta na tela
+            alert("Obrigado pelo envio! O item será analisado.");
+
+            // Redireciona para a página inicial
+            window.location.href = "index.html";
+        });
+    </script>
 
 </body>
 
